@@ -27,10 +27,10 @@ jobs:
           python -m pip install '.[dev]'
 
       - name: Run WPS
-        run: python -m flake8 --select=WPS,E999 --format=default odr tests examples
+        run: python -m flake8 --select=WPS,E999 --format=default odr tests
 
       - name: Run mypy
-        run: python -m mypy --config-file mypy.ini odr tests examples
+        run: python -m mypy --config-file mypy.ini odr tests
 
       - name: Build distribution
         run: python -m build

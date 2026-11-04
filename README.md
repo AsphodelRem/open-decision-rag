@@ -91,21 +91,6 @@ The flat corpus needs no embedding endpoint. Use `engine.search(...)` when you
 only need passages. This chat adapter generates relevance estimates; native
 decision-model readouts use separate adapters.
 
-Next steps: [real model setup and replay](docs/real_models.md),
-[full FRIDA-Decisions experiment](docs/frida_decisions.md),
-[direct vLLM decisions](docs/vllm_decisions.md), or the
-[offline Jupyter walkthrough](examples/offline.ipynb).
-
-For an interactive FRIDA chat over an existing index, configure the endpoints
-as described in the [FRIDA guide](docs/frida_decisions.md), then run:
-
-```sh
-python -m examples.frida_decisions --config examples/frida_run.json --reuse-index --chat
-```
-
-Ask follow-up questions in the same session; use `/clear` to reset history and
-`/exit` to leave.
-
 ## Contribute
 
 Contributions are welcome, especially model integrations, reproducible retrieval
