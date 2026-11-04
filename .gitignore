@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Notebook example output
+.decisionrag-notebook-index/
+.decisionrag-ragu-ru/
+.decisionrag-frida/
